@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_novel/pages/book_cats_page.dart';
-import 'package:flutter_novel/pages/book_find.dart';
+import 'package:flutter_novel/pages/book_find_page.dart';
 import 'package:flutter_novel/pages/book_rank_page.dart';
 import 'package:flutter_novel/pages/home_page.dart';
 
