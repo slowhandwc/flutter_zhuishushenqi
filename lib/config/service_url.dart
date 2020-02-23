@@ -1,5 +1,6 @@
 ///api base地址
 const apiBaseUrl= 'http://api.zhuishushenqi.com';
+const apiBaseUrl2 = 'http://bookapi01.zhuishushenqi.com';
 ///书评 base地址
 const communitBaseUrl = 'http://community.zhuishushenqi.com';
 ///图片 base地址
@@ -34,9 +35,17 @@ String getRecommendBookListUrl(String bookId){
 }
 
 ///章节列表地址获取
-String getChapterListUrl(String bookId){
-  return chapterListBaseUrl + "/$bookId"+"?view=chapters";
+String getChapterListUrl(String resourceId){
+  return getBookResourceLink + "/$resourceId"+"?view=chapters";
 }
+
+///章节列表地址获取
+String getChapterContentUrl(String link){
+  return chapterBaseUrl + '/chapter/'+link;
+}
+
+///获取小说源
+const getBookResourceLink = apiBaseUrl2 + "/btoc";
 
 ///获取书籍分类
 const getBookCatsUrl = apiBaseUrl + "/cats/lv2/statistics";

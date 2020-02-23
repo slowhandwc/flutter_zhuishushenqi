@@ -20,8 +20,6 @@ Future<Response> get(String url,Map<String, dynamic> params) async{
     } else {
       return Future.error(Response(data: -1));
     }
-  } finally {
-
   }
 }
 
@@ -33,6 +31,6 @@ Future post(String url,{params}) async{
   if (response.statusCode == 200){
     return response.data;
   } else {
-    //todo
+    return Future.error(Response(data: -1));
   }
 }

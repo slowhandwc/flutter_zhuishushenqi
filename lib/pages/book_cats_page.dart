@@ -158,6 +158,7 @@ class _BookCatsPageState extends State<BookCatsPage> {
     }
   }
 
+  ///计算一个分类列表的高度
   calculateOneCatHeight(List<int> lengthList,int type){
     var itemHeight = (MediaQuery.of(context).size.width * 0.8 - 30)/4;
     print('itemHeight==$itemHeight');

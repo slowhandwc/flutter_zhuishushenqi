@@ -15,6 +15,7 @@ Book _$BookFromJson(Map<String, dynamic> json) {
     ..latelyFollower = json['latelyFollower'] as int
     ..retentionRatio = json['retentionRatio'] as String
     ..otherReadRatio = (json['otherReadRatio'] as num)?.toDouble()
+    ..lastChapter = json['lastChapter'] as String
     ..title = json['title'] as String
     ..author = json['author'] as String
     ..desc = json['desc'] as String
@@ -32,6 +33,7 @@ Map<String, dynamic> _$BookToJson(Book instance) => <String, dynamic>{
       'latelyFollower': instance.latelyFollower,
       'retentionRatio': instance.retentionRatio,
       'otherReadRatio': instance.otherReadRatio,
+      'lastChapter': instance.lastChapter,
       'title': instance.title,
       'author': instance.author,
       'desc': instance.desc,

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_novel/pages/book_cats_page.dart';
 import 'package:flutter_novel/pages/book_find_page.dart';
 import 'package:flutter_novel/pages/book_rank_page.dart';
+import 'package:flutter_novel/pages/book_read_page.dart';
 import 'package:flutter_novel/pages/home_page.dart';
 
 void main() => runApp(MyApp());
@@ -27,7 +28,10 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         'book_category': (context) => BookCatsPage(),
-        'book_rank':(context) => BookRankPage()
+        'book_rank':(context) => BookRankPage(),
+        'book_read':(context){
+          return BookReadPage(bookId: ModalRoute.of(context).settings.arguments);
+        }
       },
       home: HomePage(),
     );

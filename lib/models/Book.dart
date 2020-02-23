@@ -1,3 +1,4 @@
+import 'package:flutter_novel/models/BookDetail.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'Book.g.dart';
@@ -16,6 +17,7 @@ class Book{
   int latelyFollower;
   String retentionRatio;
   double otherReadRatio;
+  String lastChapter;
 
   String _desc;
   String _gender;
@@ -67,4 +69,14 @@ class Book{
 
   factory Book.fromJson(Map<String, dynamic> json) => _$BookFromJson(json);
   Map<String, dynamic> toJson() => _$BookToJson(this);
+
+  fromBookDetail(BookDetail bookDetail){
+    id = bookDetail.id;
+    title = bookDetail.title;
+    author = bookDetail.author;
+    majorCate = bookDetail.majorCate;
+    minorCate = bookDetail.minorCate;
+    lastChapter = bookDetail.lastChapter;
+    cover = bookDetail.cover;
+  }
 }

@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:flutter_novel/config/request_manager.dart';
 import 'package:flutter_novel/config/service_url.dart';
 import 'package:flutter_novel/models/BookCategories.dart';
@@ -5,6 +7,10 @@ import 'package:flutter_novel/models/BookDetail.dart';
 import 'package:flutter_novel/models/BookList.dart';
 import 'package:flutter_novel/models/BookRank.dart';
 import 'package:flutter_novel/models/BookRankDetailResult.dart';
+import 'package:flutter_novel/models/BookResource.dart';
+import 'package:flutter_novel/models/ChapterContent.dart';
+import 'package:flutter_novel/models/ChapterContentResult.dart';
+import 'package:flutter_novel/models/ChapterList.dart';
 import 'package:flutter_novel/models/RecommendBookList.dart';
 import 'package:flutter_novel/models/ShortPostCount.dart';
 import 'package:flutter_novel/models/ShortPostList.dart';
@@ -64,6 +70,24 @@ Future<RecommendBookList> getRecommendBook(String bookId) async{
   var response = await get(getRecommendBookListUrl(bookId),{});
   return RecommendBookList.fromJson(response.data);
 }
+///获取书籍源list
+Future<List<BookResource>> getBookResourceList(String bookId) async{
+  var response = await get(getBookResourceLink,{'view':'summary','book':bookId});
+  var list = response.data as List<dynamic>;
+  return list.map((item) => BookResource.fromJson(item)).toList();
+}
+///获取书籍章节列表
+Future<ChapterList> getBookChapterList(String bookId) async{
+  var response = await get(getChapterListUrl(bookId), {});
+  return ChapterList.fromJson(response.data);
+}
+
+///获取书籍章节内容
+Future<ChapterContent> getBookChapterContent(String link) async{
+  var response = await get(getChapterContentUrl(link), {});
+  return ChapterContentResult.fromJson(response.data).chapter;
+}
+
 
 
 

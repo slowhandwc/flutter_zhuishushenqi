@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_novel/db/SqliteHelper.dart';
+import 'package:flutter_novel/db/dao/BookDao.dart';
+import 'package:flutter_novel/models/Book.dart';
 import 'package:flutter_novel/models/BookDetail.dart';
 import 'package:flutter_novel/models/RecommendBookList.dart';
 import 'package:flutter_novel/models/ShortPostCount.dart';
@@ -23,8 +26,16 @@ class BookInfoDetailPage extends StatefulWidget {
 
 class _BookInfoDetailPageState extends State<BookInfoDetailPage> {
   final String bookId;
+  final BookDao bookDao = new BookDao();
+  BookDetail bookDetail;
 
   _BookInfoDetailPageState(this.bookId);
+
+  @override
+  void dispose() {
+    bookDao.close();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +49,7 @@ class _BookInfoDetailPageState extends State<BookInfoDetailPage> {
                       if (!snap.hasData) {
                         return Center(child: CircularProgressIndicator());
                       }
-                      BookDetail bookDetail = snap.data as BookDetail;
+                      bookDetail = snap.data as BookDetail;
                       if (bookDetail.id == null) {
                         showToast('请稍后再试');
                         return RaisedButton(
@@ -527,7 +538,9 @@ class _BookInfoDetailPageState extends State<BookInfoDetailPage> {
                               flex: 3,
                               child: GestureDetector(
                                 onTap: (){
-                                  //todo 追更新
+                                  Book book = Book();
+                                  book.fromBookDetail(bookDetail);
+                                  bookDao.insert(book);
                                 },
                                 child: Row(
                                   mainAxisAlignment: MainAxisAlignment.center,
