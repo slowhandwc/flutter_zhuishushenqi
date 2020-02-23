@@ -1,13 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_novel/config/service_url.dart';
-import 'package:flutter_novel/models/Book.dart';
-import 'package:flutter_novel/models/BookRank.dart';
-import 'package:flutter_novel/models/BookRankDetailResult.dart';
-import 'package:flutter_novel/models/RankInfo.dart';
-import 'package:flutter_novel/net/Request.dart';
-import 'package:flutter_novel/pages/book_info_detail_page.dart';
-import 'package:flutter_novel/widgets/left_menu.dart';
+import 'package:flutter_zhuishushenqi/config/service_url.dart';
+import 'package:flutter_zhuishushenqi/models/Book.dart';
+import 'package:flutter_zhuishushenqi/models/BookRank.dart';
+import 'package:flutter_zhuishushenqi/models/BookRankDetailResult.dart';
+import 'package:flutter_zhuishushenqi/models/RankInfo.dart';
+import 'package:flutter_zhuishushenqi/net/Request.dart';
+import 'package:flutter_zhuishushenqi/pages/book_info_detail_page.dart';
+import 'package:flutter_zhuishushenqi/widgets/left_menu.dart';
 
 class BookRankPage extends StatefulWidget {
   @override

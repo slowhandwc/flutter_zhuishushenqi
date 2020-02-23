@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_easyrefresh/easy_refresh.dart';
-import 'package:flutter_novel/config/service_url.dart';
-import 'package:flutter_novel/models/Book.dart';
-import 'package:flutter_novel/models/BookList.dart';
-import 'package:flutter_novel/net/Request.dart';
-import 'package:flutter_novel/utils/utils.dart';
+import 'package:flutter_zhuishushenqi/config/service_url.dart';
+import 'package:flutter_zhuishushenqi/models/Book.dart';
+import 'package:flutter_zhuishushenqi/models/BookList.dart';
+import 'package:flutter_zhuishushenqi/net/Request.dart';
+import 'package:flutter_zhuishushenqi/utils/utils.dart';
 
 class BookMarketPage extends StatefulWidget {
   @override

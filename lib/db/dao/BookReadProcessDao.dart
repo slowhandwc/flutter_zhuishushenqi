@@ -1,4 +1,4 @@
-import 'package:flutter_novel/models/BookReadProcess.dart';
+import 'package:flutter_zhuishushenqi/models/BookReadProcess.dart';
 import 'package:sqflite/sqflite.dart';
 
 import '../BaseDbProvider.dart';

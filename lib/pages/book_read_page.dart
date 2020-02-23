@@ -2,19 +2,19 @@ import 'dart:collection';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_novel/db/dao/BookReadProcessDao.dart';
-import 'package:flutter_novel/db/dao/ChapterContentDao.dart';
-import 'package:flutter_novel/models/BookReadProcess.dart';
-import 'package:flutter_novel/models/BookResource.dart';
-import 'package:flutter_novel/models/Chapter.dart';
-import 'package:flutter_novel/models/ChapterContent.dart';
-import 'package:flutter_novel/models/ChapterContentPage.dart';
-import 'package:flutter_novel/models/ChapterList.dart';
-import 'package:flutter_novel/net/Request.dart';
-import 'package:flutter_novel/utils/utils.dart';
-import 'package:flutter_novel/widgets/read/read_bottom_widget.dart';
-import 'package:flutter_novel/widgets/read/read_content_widget.dart';
-import 'package:flutter_novel/widgets/read/read_head_widget.dart';
+import 'package:flutter_zhuishushenqi/db/dao/BookReadProcessDao.dart';
+import 'package:flutter_zhuishushenqi/db/dao/ChapterContentDao.dart';
+import 'package:flutter_zhuishushenqi/models/BookReadProcess.dart';
+import 'package:flutter_zhuishushenqi/models/BookResource.dart';
+import 'package:flutter_zhuishushenqi/models/Chapter.dart';
+import 'package:flutter_zhuishushenqi/models/ChapterContent.dart';
+import 'package:flutter_zhuishushenqi/models/ChapterContentPage.dart';
+import 'package:flutter_zhuishushenqi/models/ChapterList.dart';
+import 'package:flutter_zhuishushenqi/net/Request.dart';
+import 'package:flutter_zhuishushenqi/utils/utils.dart';
+import 'package:flutter_zhuishushenqi/widgets/read/read_bottom_widget.dart';
+import 'package:flutter_zhuishushenqi/widgets/read/read_content_widget.dart';
+import 'package:flutter_zhuishushenqi/widgets/read/read_head_widget.dart';
 
 ///书籍阅读page
 class BookReadPage extends StatefulWidget {

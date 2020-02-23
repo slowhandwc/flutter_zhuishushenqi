@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_novel/config/service_url.dart';
+import 'package:flutter_zhuishushenqi/config/service_url.dart';
 
 class ItemBookCategory extends StatefulWidget {
   String categoryName;

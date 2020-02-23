@@ -1,6 +1,6 @@
 
 import 'package:flutter/cupertino.dart';
-import 'package:flutter_novel/db/SqliteHelper.dart';
+import 'package:flutter_zhuishushenqi/db/SqliteHelper.dart';
 import 'package:sqflite/sqflite.dart';
 
 abstract class BaseDbProvider{

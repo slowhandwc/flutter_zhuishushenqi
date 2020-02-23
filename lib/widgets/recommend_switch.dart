@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_novel/models/RecommendBook.dart';
-import 'package:flutter_novel/utils/utils.dart';
+import 'package:flutter_zhuishushenqi/models/RecommendBook.dart';
+import 'package:flutter_zhuishushenqi/utils/utils.dart';
 
 ///推荐组件
 class RecommendSwitchWidget extends StatefulWidget {

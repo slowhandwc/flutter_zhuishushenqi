@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_novel/db/SqliteHelper.dart';
-import 'package:flutter_novel/db/dao/BookDao.dart';
-import 'package:flutter_novel/models/Book.dart';
-import 'package:flutter_novel/models/BookDetail.dart';
-import 'package:flutter_novel/models/RecommendBookList.dart';
-import 'package:flutter_novel/models/ShortPostCount.dart';
-import 'package:flutter_novel/models/ShortPostItem.dart';
-import 'package:flutter_novel/models/ShortPostList.dart';
-import 'package:flutter_novel/net/Request.dart';
-import 'package:flutter_novel/utils/utils.dart';
-import 'package:flutter_novel/widgets/recommend_switch.dart';
-import 'package:flutter_novel/widgets/score_star.dart';
-import 'package:flutter_novel/widgets/tag_wall.dart';
+import 'package:flutter_zhuishushenqi/db/SqliteHelper.dart';
+import 'package:flutter_zhuishushenqi/db/dao/BookDao.dart';
+import 'package:flutter_zhuishushenqi/models/Book.dart';
+import 'package:flutter_zhuishushenqi/models/BookDetail.dart';
+import 'package:flutter_zhuishushenqi/models/RecommendBookList.dart';
+import 'package:flutter_zhuishushenqi/models/ShortPostCount.dart';
+import 'package:flutter_zhuishushenqi/models/ShortPostItem.dart';
+import 'package:flutter_zhuishushenqi/models/ShortPostList.dart';
+import 'package:flutter_zhuishushenqi/net/Request.dart';
+import 'package:flutter_zhuishushenqi/utils/utils.dart';
+import 'package:flutter_zhuishushenqi/widgets/recommend_switch.dart';
+import 'package:flutter_zhuishushenqi/widgets/score_star.dart';
+import 'package:flutter_zhuishushenqi/widgets/tag_wall.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
 ///书籍详情界面

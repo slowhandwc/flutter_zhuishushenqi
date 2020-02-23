@@ -1,19 +1,19 @@
 import 'dart:convert';
 
-import 'package:flutter_novel/config/request_manager.dart';
-import 'package:flutter_novel/config/service_url.dart';
-import 'package:flutter_novel/models/BookCategories.dart';
-import 'package:flutter_novel/models/BookDetail.dart';
-import 'package:flutter_novel/models/BookList.dart';
-import 'package:flutter_novel/models/BookRank.dart';
-import 'package:flutter_novel/models/BookRankDetailResult.dart';
-import 'package:flutter_novel/models/BookResource.dart';
-import 'package:flutter_novel/models/ChapterContent.dart';
-import 'package:flutter_novel/models/ChapterContentResult.dart';
-import 'package:flutter_novel/models/ChapterList.dart';
-import 'package:flutter_novel/models/RecommendBookList.dart';
-import 'package:flutter_novel/models/ShortPostCount.dart';
-import 'package:flutter_novel/models/ShortPostList.dart';
+import 'package:flutter_zhuishushenqi/config/request_manager.dart';
+import 'package:flutter_zhuishushenqi/config/service_url.dart';
+import 'package:flutter_zhuishushenqi/models/BookCategories.dart';
+import 'package:flutter_zhuishushenqi/models/BookDetail.dart';
+import 'package:flutter_zhuishushenqi/models/BookList.dart';
+import 'package:flutter_zhuishushenqi/models/BookRank.dart';
+import 'package:flutter_zhuishushenqi/models/BookRankDetailResult.dart';
+import 'package:flutter_zhuishushenqi/models/BookResource.dart';
+import 'package:flutter_zhuishushenqi/models/ChapterContent.dart';
+import 'package:flutter_zhuishushenqi/models/ChapterContentResult.dart';
+import 'package:flutter_zhuishushenqi/models/ChapterList.dart';
+import 'package:flutter_zhuishushenqi/models/RecommendBookList.dart';
+import 'package:flutter_zhuishushenqi/models/ShortPostCount.dart';
+import 'package:flutter_zhuishushenqi/models/ShortPostList.dart';
 
 Future<BookList> getBookList(int index,int limit) async {
   var response = await get(bookListUrl, {

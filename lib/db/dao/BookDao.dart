@@ -1,5 +1,5 @@
-import 'package:flutter_novel/db/BaseDbProvider.dart';
-import 'package:flutter_novel/models/Book.dart';
+import 'package:flutter_zhuishushenqi/db/BaseDbProvider.dart';
+import 'package:flutter_zhuishushenqi/models/Book.dart';
 import 'package:sqflite/sqflite.dart';
 
 class BookDao extends BaseDbProvider{

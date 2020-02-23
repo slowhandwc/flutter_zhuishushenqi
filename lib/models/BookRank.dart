@@ -1,4 +1,4 @@
-import 'package:flutter_novel/models/RankInfo.dart';
+import 'package:flutter_zhuishushenqi/models/RankInfo.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'BookRank.g.dart';

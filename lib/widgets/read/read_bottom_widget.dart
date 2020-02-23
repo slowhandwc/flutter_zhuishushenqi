@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_novel/utils/utils.dart';
+import 'package:flutter_zhuishushenqi/utils/utils.dart';
 
 class ReadBottomWidget extends StatelessWidget {
   final int allPageCount;

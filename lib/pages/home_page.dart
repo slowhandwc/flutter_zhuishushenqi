@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_novel/pages/book_find_page.dart';
-import 'package:flutter_novel/pages/book_list_page.dart';
-import 'package:flutter_novel/pages/book_market_page.dart';
+import 'package:flutter_zhuishushenqi/pages/book_find_page.dart';
+import 'package:flutter_zhuishushenqi/pages/book_list_page.dart';
+import 'package:flutter_zhuishushenqi/pages/book_market_page.dart';
 
 class HomePage extends StatefulWidget {
   @override

@@ -1,5 +1,5 @@
 
-import 'package:flutter_novel/models/PostAuthor.dart';
+import 'package:flutter_zhuishushenqi/models/PostAuthor.dart';
 import 'package:json_annotation/json_annotation.dart';
 part 'ShortPostItem.g.dart';
 @JsonSerializable()

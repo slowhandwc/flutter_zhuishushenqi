@@ -1,5 +1,5 @@
 
-import 'package:flutter_novel/models/BookCategoryDetails.dart';
+import 'package:flutter_zhuishushenqi/models/BookCategoryDetails.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'BookCategories.g.dart';

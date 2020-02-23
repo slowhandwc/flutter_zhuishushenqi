@@ -1,4 +1,4 @@
-import 'package:flutter_novel/models/Chapter.dart';
+import 'package:flutter_zhuishushenqi/models/Chapter.dart';
 import 'package:json_annotation/json_annotation.dart';
 part 'ChapterList.g.dart';
 @JsonSerializable()

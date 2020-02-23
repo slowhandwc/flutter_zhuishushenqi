@@ -1,4 +1,4 @@
-import 'package:flutter_novel/models/ChapterContent.dart';
+import 'package:flutter_zhuishushenqi/models/ChapterContent.dart';
 import 'package:sqflite/sqflite.dart';
 
 import '../BaseDbProvider.dart';

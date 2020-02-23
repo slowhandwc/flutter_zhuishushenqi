@@ -1,4 +1,4 @@
-import 'package:flutter_novel/models/ShortPostItem.dart';
+import 'package:flutter_zhuishushenqi/models/ShortPostItem.dart';
 import 'package:json_annotation/json_annotation.dart';
 part 'ShortPostList.g.dart';
 @JsonSerializable()

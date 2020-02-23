@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_novel/models/BookCategories.dart';
-import 'package:flutter_novel/models/BookCategoryDetails.dart';
-import 'package:flutter_novel/net/Request.dart';
-import 'package:flutter_novel/utils/utils.dart';
-import 'package:flutter_novel/widgets/item_book_category.dart';
-import 'package:flutter_novel/widgets/left_menu.dart';
-import 'package:flutter_novel/widgets/text_center_in_line.dart';
+import 'package:flutter_zhuishushenqi/models/BookCategories.dart';
+import 'package:flutter_zhuishushenqi/models/BookCategoryDetails.dart';
+import 'package:flutter_zhuishushenqi/net/Request.dart';
+import 'package:flutter_zhuishushenqi/utils/utils.dart';
+import 'package:flutter_zhuishushenqi/widgets/item_book_category.dart';
+import 'package:flutter_zhuishushenqi/widgets/left_menu.dart';
+import 'package:flutter_zhuishushenqi/widgets/text_center_in_line.dart';
 
 
 /// 书籍分类页面

@@ -1,4 +1,4 @@
-import 'package:flutter_novel/models/BookDetail.dart';
+import 'package:flutter_zhuishushenqi/models/BookDetail.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'Book.g.dart';

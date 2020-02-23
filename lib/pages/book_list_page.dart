@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_novel/db/SqliteHelper.dart';
-import 'package:flutter_novel/db/dao/BookDao.dart';
-import 'package:flutter_novel/models/Book.dart';
-import 'package:flutter_novel/utils/utils.dart';
+import 'package:flutter_zhuishushenqi/db/SqliteHelper.dart';
+import 'package:flutter_zhuishushenqi/db/dao/BookDao.dart';
+import 'package:flutter_zhuishushenqi/models/Book.dart';
+import 'package:flutter_zhuishushenqi/utils/utils.dart';
 
 class BookListPage extends StatefulWidget {
   @override
